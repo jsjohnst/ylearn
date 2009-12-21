@@ -1,0 +1,44 @@
+<p>
+  <b>ISBN:</b>
+  <%=h @item.isbn %>
+</p>
+<p>
+  <b>Title:</b>
+  <%=h @item.title %>
+</p>
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+<p>
+  <b>Author:</b>
+  <%=h @item.author %>
+</p>
+<p>
+  <b>Publisher:</b>
+  <%=h @item.publisher %>
+</p>
+<p>
+  <b>Source:</b>
+  <%=h @item.source %>
+</p>
+<p>
+  <b>Owner:</b>
+  <%=h @item.owner %>
+</p>
+<p>
+  <b>Image URL:</b>
+  <%=h @item.image_url %>
+</p>
+<p>
+  <b>Electronic:</b>
+  <%= @item.electronic ? "Yes" : "No" %>
+</p>
+<p>
+  <b>Available:</b>
+  <%= @item.available ? "Yes" : "No" %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_item_path(@item) %> |
+<%= link_to 'Back', admin_items_path %>
