@@ -1,2 +1,11 @@
-<h1>Library#list</h1>
-<p>Find me in app/views/library/list.html.erb</p>
+<h1>Available Library Items</h1>
+<table width="100%" cellpadding="3" cellspacing="3" bgcolor="#C3C3C3">
+  <% @items.each do |item| %>
+  <tr bgcolor="#FFFFFF">
+    <td><%=h item.title %></td>
+    <td><%=h item.description %></td>
+    <td>Icons</td>
+    <td><%=h item.publisher %></td>
+  </tr>
+  <% end %>
+</table>
