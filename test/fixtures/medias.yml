@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  length: MyString
+  type: MyString
+  filename: MyString
+  checked_out: false
+  available: false
+  format: MyString
+
+two:
+  title: MyString
+  description: MyText
+  length: MyString
+  type: MyString
+  filename: MyString
+  checked_out: false
+  available: false
+  format: MyString

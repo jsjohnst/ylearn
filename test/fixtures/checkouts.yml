@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ip: MyString
+  date_out: 2009-12-20 17:23:11
+  date_in: 2009-12-20 17:23:11
+  returned: false
+
+two:
+  ip: MyString
+  date_out: 2009-12-20 17:23:11
+  date_in: 2009-12-20 17:23:11
+  returned: false
