@@ -2,9 +2,9 @@
 <table width="100%" cellpadding="3" cellspacing="3" bgcolor="#C3C3C3">
   <% @items.each do |item| %>
   <tr bgcolor="#FFFFFF">
-    <td><%=h item.title %></td>
+    <td><%= link_to item.title, :action => :detail, :id => item %></td>
     <td><%=h item.description %></td>
-    <td>Icons</td>
+    <td><img src="/images/pdf_icon.gif"><img src="/images/epub_icon.jpg"><img src="/images/mobi_icon.png"></td>
     <td><%=h item.publisher %></td>
   </tr>
   <% end %>

@@ -1,2 +1,19 @@
-<h1>Library#checkout</h1>
-<p>Find me in app/views/library/checkout.html.erb</p>
+<center>
+<h1><%=h @media.item.title %></h1>
+<h2><%=h @media.title %></h2>
+To checkout this item, you must agree to the following:
+<br />
+<textarea cols="80" rows="8">
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+Disclaimer Text
+</textarea>
+<br />
+<br />
+<%= button_to 'Agree', :action => :checkout, :method => :post, :id => @media %>

@@ -1,2 +1,34 @@
-<h1>Library#detail</h1>
-<p>Find me in app/views/library/detail.html.erb</p>
+<h1><%=h @item.title %></h1>
+<div>
+<img style="margin: 0 10px 0 5px;" width="95" height="112" src="<%=h @item.image_url %>" align="left" />
+<br />
+<%=h @item.description %>
+</div>
+<div style="clear: both;">
+<br />
+<p>
+<b>Author:</b> <%=h @item.author %>
+</p>
+<p>
+<b>Publisher:</b> <%=h @item.publisher %>
+</p>
+<p>
+<b>ISBN:</b> <%=h @item.isbn %>
+</p>
+</div>
+<h2>Media</h2>
+<hr>
+<table width="100%">
+  <tr>
+    <th align="left">Title</th>
+    <th align="left">Format</th>
+    <th align="left">Action</th>
+  </tr>
+<% @item.medias.each do |media| %>
+  <tr>
+    <td><%=h media.title %></td>
+    <td><%=h media.format %></td>
+    <td><%= link_to_if !media.checked_out, 'Checkout', :action => :checkout, :id => media %></td>
+  </tr>
+<% end %>
+</table>

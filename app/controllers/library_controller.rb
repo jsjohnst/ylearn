@@ -15,6 +15,16 @@ class LibraryController < ApplicationController
   end
 
   def checkout
+    @media = Media.find(params[:id], :include => :item)
+    if(request.post?)
+      @checkout = Checkout.new
+      @checkout.media_id = @media
+      @checkout.ip = request.remote_ip
+      @checkout.save
+      @media.checked_out = true
+      @media.save
+      redirect_to :controller => :download, :action => "get", :id => @media
+    end
   end
 
   def return
