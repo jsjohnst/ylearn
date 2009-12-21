@@ -25,6 +25,10 @@ class Admin::ItemsController < ApplicationController
   # GET /items/new.xml
   def new
     @item = Item.new
+    @item.medias.build
+    @item.medias.build
+    @item.medias.build
+    @item.medias.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +39,9 @@ class Admin::ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    @item.medias.build
+    @item.medias.build
+    @item.medias.build
   end
 
   # POST /items
