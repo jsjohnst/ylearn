@@ -1,0 +1,19 @@
+body{ margin: 0; padding: 0; }
+
+#content {
+    margin: 0 10px 0 10px;
+}
+
+.menubar {
+    background-color: #bbb;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.menubar a,  .menubar a:visited {
+    color: #000;
+}
+
+.menubar a:hover {
+    color: #fff;
+}
