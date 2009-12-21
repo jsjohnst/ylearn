@@ -10,7 +10,8 @@
     <%= render :partial => "layouts/menubar" %>
     <p style="color: green"><%= flash[:notice] %></p>
 
-    <%= yield %>
+    <div id="content"><%= yield %></div>
+
   </body>
   <script type="text/javascript" src="/javascripts/ylearn.js"></script>
 </html>
